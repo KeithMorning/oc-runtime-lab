@@ -219,7 +219,7 @@
 		3044E26723D47C0E006763E3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 			);
@@ -684,6 +684,7 @@
 		3044E26A23D47C0E006763E3 /* debug-objc */ = {
 			isa = PBXGroup;
 			children = (
+				5351174924B5FC2300B631A2 /* Group */,
 				3044E26B23D47C0E006763E3 /* main.m */,
 				7F14F11124B0BB160087CCD3 /* Testobject.h */,
 				7F14F11224B0BB160087CCD3 /* Testobject.m */,
@@ -691,6 +692,13 @@
 				7F14F11524B178860087CCD3 /* LabTestRuntime.m */,
 			);
 			path = "debug-objc";
+			sourceTree = "<group>";
+		};
+		5351174924B5FC2300B631A2 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Group;
 			sourceTree = "<group>";
 		};
 		838485B20D6D67F900CEA253 /* Other */ = {
@@ -1472,7 +1480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = 29HA8N9RQ5;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1505,7 +1513,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = LY6BSMT7G9;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;

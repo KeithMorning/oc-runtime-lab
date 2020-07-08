@@ -39,6 +39,10 @@
 }
 
 
+- (void)classmsgsend:(NSString *)msg{
+    NSLog(@"self class is %@, supper class is %@, msg is %@",[self class],[super class],msg);
+}
+
 
 + (void)classMeathod{
     NSLog(@"this is a Class Meathod");

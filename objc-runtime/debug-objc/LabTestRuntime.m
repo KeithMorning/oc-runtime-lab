@@ -18,6 +18,7 @@
     [self dynamicCreateInstance];
     [self operateTheInstance];
     [self findAllClass];
+    [self msagesendTest];
 }
 
 #pragma mark - objc class struct
@@ -219,11 +220,38 @@
         free(classes);
     }
     makeLine();
-    
-
 }
 
+#pragma mark - Invocation Meathod
++ (void)msagesendTest{
+    Testobject *obj = [Testobject new];
+    SEL privatesel = @selector(classmsgsend:);
+    NSMethodSignature *privatesig, *classsig;
+    
+    //从实例获取实例的方法签名
+    privatesig = [obj methodSignatureForSelector:privatesel];
+    
+    //通过类获取实例的方法签名
+    //privatesig = [Testobject instanceMethodSignatureForSelector:privatesel];
+    
+    //通过类获取类的方法签名
+    classsig = [Testobject methodSignatureForSelector:@selector(alloc)];
+    
+    NSString *cool = @"cool";
+    
+    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:privatesig];
+    [invocation setTarget:obj];
+    [invocation setSelector:privatesel];
+    [invocation setArgument:&cool atIndex:2];//0 target, 1 _cmd
+    [invocation retainArguments];
+    [invocation invoke];
+    
+    makeLine();
+}
 
+- (void)testMethodForward{
+    
+}
 
 
 
