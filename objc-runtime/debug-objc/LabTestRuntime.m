@@ -8,6 +8,8 @@
 #import "LabTestRuntime.h"
 #import "objc-runtime.h"
 #import "Testobject.h"
+#import "TTOObserver.h"
+#import "TTPTestISA.h"
 
 @implementation LabTestRuntime
 
@@ -19,6 +21,8 @@
     [self operateTheInstance];
     [self findAllClass];
     [self msagesendTest];
+    [TTOObserverExample run];
+    [TTPTestISA run];
 }
 
 #pragma mark - objc class struct

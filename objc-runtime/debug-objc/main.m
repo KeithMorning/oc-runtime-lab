@@ -8,12 +8,11 @@
 //#import <Foundation/Foundation.h>
 #import "objc-runtime.h"
 #import "LabTestRuntime.h"
-
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        [[NSObject alloc] init];
         [LabTestRuntime run];
+        
         
     }
     return 0;

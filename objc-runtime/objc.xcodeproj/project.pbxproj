@@ -103,6 +103,11 @@
 		393CEAC60DC69E67000B69DE /* objc-references.h in Headers */ = {isa = PBXBuildFile; fileRef = 393CEAC50DC69E67000B69DE /* objc-references.h */; };
 		39ABD72312F0B61800D1054C /* objc-weak.h in Headers */ = {isa = PBXBuildFile; fileRef = 39ABD71F12F0B61800D1054C /* objc-weak.h */; };
 		39ABD72412F0B61800D1054C /* objc-weak.mm in Sources */ = {isa = PBXBuildFile; fileRef = 39ABD72012F0B61800D1054C /* objc-weak.mm */; };
+		5351178224B72D2B00B631A2 /* TTOObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 5351178124B72D2B00B631A2 /* TTOObserver.m */; };
+		5351178524B7488A00B631A2 /* TTObMainTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5351178424B7488A00B631A2 /* TTObMainTransport.m */; };
+		5351178824B754A900B631A2 /* TTOQuickForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 5351178724B754A900B631A2 /* TTOQuickForward.m */; };
+		5351178E24B7638E00B631A2 /* NSObject+TTOISASwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5351178D24B7638E00B631A2 /* NSObject+TTOISASwizzle.m */; };
+		5351179124B763FD00B631A2 /* TTPTestISA.m in Sources */ = {isa = PBXBuildFile; fileRef = 5351179024B763FD00B631A2 /* TTPTestISA.m */; };
 		7593EC58202248E50046AB96 /* objc-object.h in Headers */ = {isa = PBXBuildFile; fileRef = 7593EC57202248DF0046AB96 /* objc-object.h */; };
 		75A9504F202BAA0600D7D56F /* objc-locks-new.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A9504E202BAA0300D7D56F /* objc-locks-new.h */; };
 		75A95051202BAA9A00D7D56F /* objc-locks.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A95050202BAA9A00D7D56F /* objc-locks.h */; };
@@ -300,6 +305,16 @@
 		393CEAC50DC69E67000B69DE /* objc-references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-references.h"; path = "runtime/objc-references.h"; sourceTree = "<group>"; };
 		39ABD71F12F0B61800D1054C /* objc-weak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-weak.h"; path = "runtime/objc-weak.h"; sourceTree = "<group>"; };
 		39ABD72012F0B61800D1054C /* objc-weak.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-weak.mm"; path = "runtime/objc-weak.mm"; sourceTree = "<group>"; };
+		5351178024B72D2B00B631A2 /* TTOObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTOObserver.h; sourceTree = "<group>"; };
+		5351178124B72D2B00B631A2 /* TTOObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTOObserver.m; sourceTree = "<group>"; };
+		5351178324B7488A00B631A2 /* TTObMainTransport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTObMainTransport.h; sourceTree = "<group>"; };
+		5351178424B7488A00B631A2 /* TTObMainTransport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTObMainTransport.m; sourceTree = "<group>"; };
+		5351178624B754A900B631A2 /* TTOQuickForward.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTOQuickForward.h; sourceTree = "<group>"; };
+		5351178724B754A900B631A2 /* TTOQuickForward.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTOQuickForward.m; sourceTree = "<group>"; };
+		5351178C24B7638E00B631A2 /* NSObject+TTOISASwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TTOISASwizzle.h"; sourceTree = "<group>"; };
+		5351178D24B7638E00B631A2 /* NSObject+TTOISASwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TTOISASwizzle.m"; sourceTree = "<group>"; };
+		5351178F24B763FD00B631A2 /* TTPTestISA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPTestISA.h; sourceTree = "<group>"; };
+		5351179024B763FD00B631A2 /* TTPTestISA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPTestISA.m; sourceTree = "<group>"; };
 		7593EC57202248DF0046AB96 /* objc-object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "objc-object.h"; path = "runtime/objc-object.h"; sourceTree = "<group>"; };
 		75A9504E202BAA0300D7D56F /* objc-locks-new.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "objc-locks-new.h"; path = "runtime/objc-locks-new.h"; sourceTree = "<group>"; };
 		75A95050202BAA9A00D7D56F /* objc-locks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-locks.h"; path = "runtime/objc-locks.h"; sourceTree = "<group>"; };
@@ -684,7 +699,7 @@
 		3044E26A23D47C0E006763E3 /* debug-objc */ = {
 			isa = PBXGroup;
 			children = (
-				5351174924B5FC2300B631A2 /* Group */,
+				5351177F24B72D0E00B631A2 /* debugcode */,
 				3044E26B23D47C0E006763E3 /* main.m */,
 				7F14F11124B0BB160087CCD3 /* Testobject.h */,
 				7F14F11224B0BB160087CCD3 /* Testobject.m */,
@@ -694,11 +709,21 @@
 			path = "debug-objc";
 			sourceTree = "<group>";
 		};
-		5351174924B5FC2300B631A2 /* Group */ = {
+		5351177F24B72D0E00B631A2 /* debugcode */ = {
 			isa = PBXGroup;
 			children = (
+				5351178024B72D2B00B631A2 /* TTOObserver.h */,
+				5351178124B72D2B00B631A2 /* TTOObserver.m */,
+				5351178324B7488A00B631A2 /* TTObMainTransport.h */,
+				5351178424B7488A00B631A2 /* TTObMainTransport.m */,
+				5351178624B754A900B631A2 /* TTOQuickForward.h */,
+				5351178724B754A900B631A2 /* TTOQuickForward.m */,
+				5351178C24B7638E00B631A2 /* NSObject+TTOISASwizzle.h */,
+				5351178D24B7638E00B631A2 /* NSObject+TTOISASwizzle.m */,
+				5351178F24B763FD00B631A2 /* TTPTestISA.h */,
+				5351179024B763FD00B631A2 /* TTPTestISA.m */,
 			);
-			path = Group;
+			path = debugcode;
 			sourceTree = "<group>";
 		};
 		838485B20D6D67F900CEA253 /* Other */ = {
@@ -1085,7 +1110,12 @@
 			files = (
 				7F14F11324B0BB170087CCD3 /* Testobject.m in Sources */,
 				7F14F11624B178860087CCD3 /* LabTestRuntime.m in Sources */,
+				5351178E24B7638E00B631A2 /* NSObject+TTOISASwizzle.m in Sources */,
 				3044E26C23D47C0E006763E3 /* main.m in Sources */,
+				5351179124B763FD00B631A2 /* TTPTestISA.m in Sources */,
+				5351178224B72D2B00B631A2 /* TTOObserver.m in Sources */,
+				5351178524B7488A00B631A2 /* TTObMainTransport.m in Sources */,
+				5351178824B754A900B631A2 /* TTOQuickForward.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
